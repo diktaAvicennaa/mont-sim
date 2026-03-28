@@ -1,6 +1,6 @@
 // Konfigurasi Supabase
 const SUPABASE_URL = 'https://yiacockzaycfosfynhlp.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_dM_oJx-fGCibzX9Yn-eZmg_vuCklBKt'; // Typo sudah diperbaiki
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlpYWNvY2t6YXljZm9zZnluaGxwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ2NjgwMjIsImV4cCI6MjA5MDI0NDAyMn0.prQKppwct-cIDLGe1z-k3O_wC54GL7y1PQjqu7OQjvY'; // Typo sudah diperbaiki
 
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
