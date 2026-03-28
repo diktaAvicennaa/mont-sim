@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring Sensor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Engine & Power Monitoring</h1>
+            <p>Status Update Terakhir: <span id="last-update">-</span></p>
+        </header>
+
+        <div class="grid-dashboard">
+            <div class="card">
+                <h3>Oil Sensor</h3>
+                <div id="oil-status" class="status-indicator off">OFF</div>
+            </div>
+            <div class="card">
+                <h3>Coolant Sensor</h3>
+                <div id="coolant-status" class="status-indicator off">OFF</div>
+            </div>
+            <div class="card">
+                <h3>Alternator Switch</h3>
+                <div id="alt-status" class="status-indicator off">OFF</div>
+            </div>
+            <div class="card">
+                <h3>Main Switch</h3>
+                <div id="switch-status" class="status-indicator off">OFF</div>
+            </div>
+
+            <div class="card value-card">
+                <h3>Alternator Voltage</h3>
+                <div class="value"><span id="alt-volt">0</span> V</div>
+            </div>
+            <div class="card value-card">
+                <h3>Battery Voltage</h3>
+                <div class="value"><span id="bat-volt">0</span> V</div>
+            </div>
+            <div class="card value-card">
+                <h3>Fuel Level (Ohm)</h3>
+                <div class="value"><span id="fuel-level">0</span> &Omega;</div>
+            </div>
+            
+            <div class="card value-card">
+                <h3>SIM Series</h3>
+                <div class="value text-value"><span id="sim-series">-</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
